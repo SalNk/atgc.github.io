@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Barre de navigation */
+.nav-logo img{
+    width: 70px;
+}
+.bn-nav{
+    background-color: rgba(0, 0, 0, 0.404);
+    z-index: 99;
+    padding: 8px 48px;
+}
+.bn-nav ul li a{
+    font-size: 16px;
+}
+.nav-link{
+    font-size: 15px;
+}
+.bn-nav a{
+    color: #0D6EFD;
+}
+.btn-navbar{
+    border-color: #0D6EFD;
+    border-radius: 5px;
+    /* border-color: #418CC6; */
+    transition: .5s;
+    color: #0D6EFD;
+} 
+.btn-navbar:hover{
+    color: white;
+    background-color: #257cff;
+}
+.arrowbas{
+    position: absolute;
+    top: 93vh;
+    color: inherit;
+    font-size: 1.6em;
+}
+.drop-el a{
+    color: #000c1d;
+}
+
+
+/* Fin Barre de navigation */
+
+/* Section Banner */
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../img/banner.jpg') center center fixed no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+.banner h1{
+    color: #418CC6;
+    font-size: 4.4em;
+}
+.banner p{
+    font-size: 1.7em;
+}
+
+/* Boutons */
+.btn-contact{
+    background-color: #418CC6;
+    border: 2px solid #418CC6;
+}
+.btn-contact:hover{
+    color: white;
+    background-color: transparent;
+    border: 2px solid #418CC6;
+ }
+.btn-discovery{
+    background-color: #61CE70;
+    border: 2px solid #61CE70;
+}
+.btn-discovery:hover{
+    color: white;
+    background-color: transparent;
+    border: 2px solid #61CE70;
+}
+.btn-contact, .btn-discovery{
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+}
+/* Section Banner */
+
+
+/* Section About */
+.about{
+    height: 110vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)), url('../img/about.jpg'), center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-cont{
+    width: 75vw;
+}
+.about .h1{
+    font-size: 2.5em;
+    color: #000c1d;
+}
+
+.about .p{
+    font-size: 1.2em;
+}
+
+.whous{
+    box-shadow: 1px 1px 10px  rgba(0,0,0,0.1);
+    padding: 50px;
+    background-color: #000c1d;
+    color: white;
+    width: 75vw;
+}
+.whous h1{
+    font-size: 1.5em;
+}
+.whous p{
+    font-size: 1em;
+}
+span{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Boutons */
+.btn-whous{
+    border-color: white;
+    padding: 7px 20px;
+    color: #000c1d;
+    border-radius: 30px;
+    background-color: white;
+}
+.btn-whous:hover{
+    transform: scale(1.2,1.2);
+}
+
+
+/* section .services
+.services{
+    height: 100vh;
+    background-color: #000c1d0e;
+} 
+*/
+
+.services .services-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services h1{
+    margin-top: 2%;
+    font-size: 2em;
+    color: #000c1d; 
+}
+
+.card-services{
+    width: 75vw;
+}
+
+/* Section cartes */
+.card-principale{
+    display: flex;
+    justify-content: center;
+    width:  100%;
+}
+
+.card-principale h5{
+    font-weight: bold;
+}
+
+/* .test{
+    background-color: #000c1d0e;
+} */
+
+/* Carte intermédiaire */
+.md-inter{
+    display: none;
+}
+
+
+
+
+
+/* section Choose */
+.choose{
+    height: 120vh;
+    background-color: #000c1d;
+}
+
+/* .imgs-up{
+    margin-top: 100px;
+} */
+.img{
+    /* display: flex; */
+    padding: 5px;
+    border-radius: 120px;
+    background: #fff;
+    width: 160px;
+    height: 160px;
+}
+
+
+
+/* Section real */
+.real{
+    /* background: linear-gradient(rgba(0,0,0,O.6),rgba(0, 0, 0, O.8)), url() center center no-repeat; */
+    background: linear-gradient(rgba(256,256,256,0.8),rgba(256,256,256,0.8)), url('../../../HERO/patterns2.png') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.card-real{
+    background-color: red;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1005px){
+    /* Barre de navigation */
+    .banner h1{
+        font-size: 3.5em;
+    }
+    .banner p{
+        font-size: 1.4em;
+    }
+
+
+    /* A propos */
+    .about{
+        height: 50%;
+    }
+    .whous{
+        padding: 50px;
+    }
+    .whous h1{
+        font-size: 1.3em;
+    }
+    .whous p{
+        font-size: 1em;
+    }
+    .btn-whous{
+        border-color: white;
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    
+    .about-cont, .whous{
+        width: 85vw;
+    }
+
+    .about .about-cont .roboto h1{
+        font-size: 2em;
+    }
+
+/* Section cartes */
+    .test{
+        width: 100%;
+    }
+    .md-inter{
+        display: block;
+    }
+    .md-const{
+        display: none;
+    }
+
+/* Section Choose */
+    .choose h1{
+        font-size: 1.8em;
+    }
+    .choose h6{
+        font-size: 0.8em;
+    }
+    .choose .imgs-up, .imgs-down p{
+        font-size: 0.8em;
+    }
+}
+
+
+@media screen and (max-width:770px){
+/* Section banner */
+    .banner{
+        height: 50vh;
+    }
+    .banner h1{
+        font-size: 2.4em;
+    }
+    .banner p{
+        font-size: 0.9em;
+    }
+
+
+/* A propos */
+    .whous{
+        padding: 30px;
+    }
+    .whous h1{
+        font-size: 1em;
+    }
+    .about .whous p{
+        font-size: 0.8em;
+    }
+    .btn-whous{
+        border-color: white;
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    .about-cont{
+        width: 100vw;
+    }
+    .whous{
+        width: 80vw;
+    }
+
+    .about .h1{
+        font-size: 1.6em;
+    }
+
+    .about .about-cont .roboto .h1{
+        font-size: 1.7em;
+    }
+
+    .about .p{
+        font-size: 0.9em;
+    }
+
+/* .services */
+    .services h1{
+        font-size: 1.3em;
+    }
+    .services p{
+        font-size: 0.8em;
+    }
+    .services .card-principale .card-title{
+        font-size: 1.1em;
+    }
+    
+    
+/* Boutons */
+    .btn-contact,  .btn-discovery{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+
+/* section Choose */
+.choose{
+    height: 198vh;
+    background-color: #000c1d;
+}
+.img{
+    width: 130px;
+    height: 130px;
+}
+
+}
+
+
+@media screen and (max-width:600px){
+/* Barre de navigation */
+    .bn-nav{
+        padding: 2px 15px;
+    }
+    .nav-logo{
+        font-size: 22px;  
+    }
+    .btn-hamburger1{
+        font-size: 12px;
+    }
+
+/* banner principale */
+    .banner h1{
+        font-size: 2em;
+    }
+    .banner p{
+        font-size: 0.8em;
+    }
+/* Boutons banner*/
+    .btn-contact, .btn-discovery{
+    padding: 5px 8px;
+    margin-right: 5px;
+    font-size: 8px;
+}
+
+/* A propos */
+    .about-cont, .services-lorem{
+        max-width: 80vw;
+    }
+    .services-flex{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+.choose{
+        height: 198vh;
+    }
+}
+
+
+@media screen and (max-width:400px){
+/* Barre de navigation */
+    .bn-nav{
+        padding: 2px 20px;
+    }
+    .nav-logo{
+        font-size: 1em;  
+    }
+    .btn-hamburger1{
+        font-size: 12px;
+        /* border: none; */
+    }
+    
+/* banner principale */
+    .banner h1{
+            font-size: 1.3em;
+    }
+    .banner p{
+            font-size: 0.5em;
+    }
+    /* Boutons */
+        .btn-contact, .btn-discovery{
+        padding: 4px 6px;
+        margin-right: 5px;
+        font-size: 6px;
+    }
+
+    
+/* A propos */
+    .about .about-cont .roboto .h1{
+        font-size: 1.13em;
+    }
+
+    .about .p{
+        font-size: 0.7em;
+    }
+
+    .whous h1{
+        font-size: 0.8em;
+    }
+    .about .whous p{
+        font-size: 0.7em;
+    }
+    .whous .btn-whous{
+        font-size: 0.5em;
+    }
+
+/* Services */
+    .services h1{
+        font-size: 1.1em;
+    }
+    .services p{
+        font-size: 0.7em;
+    }
+    .services .card-principale .card-title{
+        font-size: 0.9em;
+    }
+    .services .card-principale p{
+        font-size: 0.7em;
+    }
+
+/* Section Choose */
+    .choose{
+        height: 185vh;
+    }
+    .img{
+        width: 100px;
+        height: 100px;
+    }
+    .choose h1{
+        font-size: 1.2em;
+    }
+    .choose .choose-text .h6{
+        font-size: 0.7em;
+    }
+    .cont{
+        width: 40vh;
+    }
+    .choose p{
+        /* font-size: 0.8em; */
+    }
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/da4b64abc0.js" crossorigin="anonymous"></script>
+
+    <!-- CSS & Cootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ATGC</title>
+</head>
+<body> 
+    <!-- py et px Sont les marges internes / position-fixed : Pour fixer la barre / w-100 : étendre la barre -->
+    <nav class="bn-nav navbar navbar-expand-lg navbar-dark position-fixed w-100">
+        <div class="container-fluid">
+          <a class="nav-logo navbar-brand fw-bolder" href="#">
+            <img src="assets/img/logo.png" alt="">
+          </a>
+
+          <!-- Bouton Hamburger -->
+          
+          <button class="navbar-toggler btn-hamburger1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon btn-hamburger"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- ms-auto pour écarter les liens du titre -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 onglets">
+
+              <li class="nav-item dropdown pe-4">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Accueil
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="drop-el"><a class="dropdown-item drop-item" href="#bref">Bref présentation</a></li>
+                  
+                  <!-- Définir une ligne entre les drop-item -->
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="drop-el"><a class="dropdown-item drop-item" href="#choose">Pourquoi nous?</a></li>
+
+                  <!-- Définir une ligne entre les drop-item -->
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="drop-el"><a class="dropdown-item drop-item" href="#real">Nos réalisations</a></li>
+
+                  <!-- Définir une ligne entre les drop-item -->
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="drop-el"><a class="dropdown-item drop-item" href="#">Témoignages</a></li>
+
+                </ul>
+              </li>
+
+              <li class="nav-item pe-4">
+                <a class="nav-link bn" href="#about">Services</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="#">Nos partenaires</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="#">Equipe</a>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+           
+              <li class="nav-item">
+                <a class="btn btn-navbar mx-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Connexion</a>
+              </li>
+
+          </div>
+        </div>   
+    </nav>
+    <div 
+    class="modal fade" 
+    id="staticBackdrop" 
+    data-bs-backdrop="static" 
+    data-bs-keyboard="false" 
+    tabindex="-1" 
+    aria-labelledby="staticBackdropLabel" 
+    aria-hidden="true"> 
+    <div class="modal-dialog"> 
+      <div class="modal-content"> 
+          <div class="modal-header"> 
+              <h5 class="modal-title text-center" id="staticBackdropLabel">Se connecter</h5> 
+              <button 
+                  type="button" 
+                  class="btn-close" 
+                  data-bs-dismiss="modal" 
+                  aria-label="Close">
+              </button> 
+          </div> 
+          <div class="modal-body">  
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <!-- <div id="emailHelp" class="for m-text">We'll never share your email with anyone else.</div> -->
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div> 
+          <div class="modal-footer"> 
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+          </div> 
+      </div> 
+    </div> 
+    </div> 
+
+    <section class="banner d-flex justify-content-center align-items-center pt-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 class="fw-bold">Bienvenue chez ATGC</h1>
+                    <p>" Exécuter vos projets avec excellence est notre Priorité "</p>
+                </div>
+                <div class="btn-banner">
+                    <button class="btn btn-contact">Contact</button>
+                    <button class="btn btn-discovery">Découvrir</button>
+                </div>
+            </div>
+        </div>
+    <a class="arrowbas" href="about"><i class="fa-solid fa-arrow-down"></i></a>
+    </section>
+
+    <section class="about py-5" id="about">
+        <div class="container about-cont">
+            <div class="row text-center">
+                <div class="col-md-12 roboto">
+                    <h1 class="text-uppercase h1" id="about">à propos</h1>
+                    <p class="p">Comme tout pays sorti de guerre, l’économie congolaise a connu de très long moment de crises caractérisées par les pillages, occasionnant ainsi la fermeture des entreprises et la fuite des capitaux. D’autres par contre se créent pour y faire face et relever le défi…
+                    <br> Ets. A.T.G.C est parmi celles qui, par ses divers domaines, offre à ses clients un service fiable.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container whous" id="bref">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>QUI SOMMES-NOUS ?</h1>
+                    <p class="p">
+                        <br>
+                        <span>A</span>frica <span>T</span>ower <span>G</span>eneral <span>C</span>onstruction <br>
+                        Fondé depuis 2013 par ses actuels dirigeants, il jouit du droit congolais en la matière. Ets. A.T.G.C est une entreprise multisectorielle et un prestataire de services qui déploie ses activités en République Démocratique du Congo. Pour nos clients, nous disposons des compétences qui garantissent la qualité de service, par l’écoute et la disponibilité nécessaire de notre savoirfaire.
+                        <br><br>
+                    </p>
+                    <a href="" class="btn btn-whous">Lire plus<i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services py-5">
+        <div class="container services-cont">
+            <div class="row">
+                <div class="col-md-12 services-flex text-center">
+                  <h1 class="text-uppercase">
+                    Nos Services<i class="fa-solid fa-wrench"></i>
+                  </h1>
+                  <p class="services-lorem">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eos!
+                  </p>
+                </div>
+            </div>
+
+            <div class="row card-principale">
+              <div class="card mb-3 rounded-0 border-0 card-services">
+                <div class="row card-box">
+                  <div class="col-md-6 test">
+                    <img src="assets/img/telecom.jpeg" class="img-fluid rounded-start" alt="..." width="100%">
+                  </div>
+                  <div class="col-md-6 test">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Télécommunication</h5>
+                      <p class="card-text">S’appuyant sur la connaissance et l’assiduité de son personnel, Ets.
+                        A.T.G.C se présente comme étant une société d’Ingénierie par excellence qui
+                        vous accompagne dans toutes vos démarches pour la mise en place, le
+                        déploiement et/ou l’implémentation d’infrastructure de réseaux télécoms;</p>
+                      <p class="card-text">
+                        <a href="" class="btn text-muted">Lire plus</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                 <!-- 2ème bloc -->
+                <div class="row md-const my-5">
+                  <div class="col-md-6 test">
+                    <div class="card-body">
+                      <h5 class="card-title text-center ">Construction</h5>
+                      <p class="card-text">Construction des ouvrages Nous avons aussi dans nos compétences, les
+                        services associés à la construction de : Maison, Bureau, école, centre de
+                        santé, Immeuble, Immeuble de Chambre/bureaux/renouvellement :
+                        innovation, réfection, Penture : fabrication, conditionnement et
+                        application, Système de refroidissement central ; Système de sécurité. Ce
+                        qui fait la différence entre Ets. A.T.G.C Et d'autres est la qualité du travail
+                        faite par des experts.</p>
+                      <p class="card-text">
+                        <a href="" class="btn text-muted">Lire plus</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 test">
+                    <img src="assets/img/telecom.jpeg" class="img-fluid rounded-start" alt="..." width="100%">
+                  </div>
+                </div>
+                <!-- Bloc intermédiaire -->
+                <div class="row md-inter my-5">
+                  <div class="col-md-6 test">
+                    <img src="assets/img/telecom.jpeg" class="img-fluid rounded-start" alt="..." width="100%">
+                  </div>
+                  <div class="col-md-6 test">
+                    <div class="card-body">
+                      <h5 class="card-title text-center ">Construction</h5>
+                      <p class="card-text">Construction des ouvrages Nous avons aussi dans nos compétences, les
+                        services associés à la construction de : Maison, Bureau, école, centre de
+                        santé, Immeuble, Immeuble de Chambre/bureaux/renouvellement :
+                        innovation, réfection, Penture : fabrication, conditionnement et
+                        application, Système de refroidissement central ; Système de sécurité. Ce
+                        qui fait la différence entre Ets. A.T.G.C Et d'autres est la qualité du travail
+                        faite par des experts.</p>
+                      <p class="card-text">
+                        <a href="" class="btn text-muted">Lire plus</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3ème bloc -->
+                <div class="row">
+                  <div class="col-md-6 test">
+                    <img src="assets/img/telecom.jpeg" class="img-fluid rounded-start" alt="..." width="100%">
+                  </div>
+                  <div class="col-md-6 test">
+                    <div class="card-body">
+                      <h5 class="card-title text-center ">Logistique</h5>
+                      <p class="card-text">Nous pensons que le marché de logistique est en plein le
+                        croissance et que nous disposons d’un atout pour répondre efficacement à tous
+                        vos besoins dans cette matière dans le souci d’accompagner notre clientèle à bon
+                        port, nous mettons à sa disposition notre service de logistiques. </p>
+                      <p class="card-text">
+                        <a href="" class="btn text-muted">Lire plus</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose py-5 text-light d-flex align-items-center" id="choose">
+      <div class="container cont">
+        <div class="row d-flex justify-content-center choose-text">
+          <div class="col-md-5 text-center">
+            <h1 class="text-uppercase">
+              Pourquoi nous ?
+            </h1>
+            <h6 class="text-uppercase h6">
+              Les raisons pour lesquelles vous devez choisir ATGC plus que d'autres sont les nombreuses qualités qu'elle rassemble
+            </h6>
+          </div>
+        </div>
+        <div class="row imgs-up my-4 d-flex justify-content-center align-items-center text-center">
+          <div class="col-md-4">
+            <img src="assets/illustrations/planning.png" class="img my-4">
+            <p>
+              Notre équipe prend le temps d'analyser et traiter vos projets selon l'ordre de priorité.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/illustrations/idées_assemblées.png" class="img my-4">
+            <p>
+              Le travail d'équipe et la collecte d'idées en équipe, fait notre plus grande force.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/illustrations/joie_d'équipe.png" class="img my-4">
+            <p>
+              Une tâche accomplie et un client satisfait est une fête pour l'équipe ATGC.
+            </p>
+          </div>
+        </div>
+        <div class="row imgs-down d-flex justify-content-center align-items-center text-center">
+          <div class="col-md-4">
+            <img src="assets/illustrations/techniciens.png" class="img my-4">
+            <p>
+              Notre équipe technique est toujours prête pour remporter tous les défis pouvant se présenter.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/illustrations/installattion_split.png" class="img my-4">
+            <p>
+              Avec une équipe de pointe, le travail est réalisé à un temps record par des personnes qualifiées.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="real py-5 text-uppercase text-center" id="real">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>
+              - Nos réalisations -
+            </h1>
+          </div>
+        </div>  
+        <div class="row card-reals">
+          <div class="col-md-4 rounded-0 border-0">
+            <div class="card rounded-0 border-0 card-real">
+              <img src="" alt="">
+              <p>je suis un paragraphe</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 rounded-0 border-0">
+            <div class="card rounded-0 mx-4 border-0 card-real">
+              <img src="" alt="">
+              <p>je suis un paragraphe</p>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-4 rounded-0 border-0">
+            <div class="card rounded-0 border-0 card-real">
+              <img src="" alt="">
+              <p>je suis un paragraphe</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="final-page">
+      <div class="container py-5">
+        <div class="row">
+          
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
